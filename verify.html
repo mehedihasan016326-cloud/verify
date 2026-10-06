@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ভেরিফাই — মেহেদী হাসান</title>
+  <style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#070707;color:#f4f4f4;font-family:Arial,"Noto Sans Bengali",sans-serif}.header{position:sticky;top:0;z-index:10;height:72px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;background:rgba(7,7,7,.88);backdrop-filter:blur(14px);border-bottom:1px solid #1d1d1d}.brand{font-size:23px;font-weight:800;letter-spacing:.5px}.dot{display:inline-block;width:10px;height:10px;background:#fff;border-radius:50%;margin-right:8px;box-shadow:0 0 15px #fff}nav{display:flex;gap:28px}nav a{color:#aaa;text-decoration:none;font-size:14px}nav a:hover{color:#fff}.upload-btn,.primary,.secondary{border:0;border-radius:10px;padding:11px 17px;font-weight:700;cursor:pointer}.upload-btn,.primary{background:#fff;color:#080808}.secondary{background:#171717;color:#fff;border:1px solid #303030}.hero{min-height:650px;padding:90px 8%;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:70px;background:radial-gradient(circle at 80% 40%,#242424 0,#101010 20%,#070707 50%)}.eyebrow{font-size:11px;letter-spacing:3px;color:#8f8f8f;font-weight:700}.hero h1{font-size:clamp(45px,7vw,82px);line-height:1.02;margin:20px 0}.hero h1 span{color:#aaa}.subtitle{max-width:580px;color:#aaa;font-size:17px;line-height:1.8}.hero-actions{display:flex;gap:12px;margin-top:30px}.primary{text-decoration:none;display:inline-block}.hero-card{height:380px;border:1px solid #353535;border-radius:28px;background:linear-gradient(145deg,#191919,#080808);position:relative;overflow:hidden;padding:35px;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 30px 90px #000}.shine{position:absolute;width:280px;height:280px;border-radius:50%;background:#fff;filter:blur(100px);opacity:.07;top:-80px;right:-60px}.card-logo{font-size:50px;font-weight:900}.card-name{font-size:18px;margin-top:10px}.card-small{font-size:10px;color:#777;letter-spacing:3px;margin-top:8px}.section{padding:85px 8%}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}.section h2,.about h2{font-size:42px;margin:8px 0}.filters{display:flex;gap:8px}.filter{background:#101010;color:#999;border:1px solid #292929;border-radius:8px;padding:9px 14px;cursor:pointer}.filter.active,.filter:hover{background:#fff;color:#000}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.item{background:#101010;border:1px solid #242424;border-radius:16px;overflow:hidden;position:relative}.item img,.item video{display:block;width:100%;height:270px;object-fit:cover;background:#111}.item-info{padding:14px}.item-title{font-weight:700;margin-bottom:10px}.item-actions{display:flex;gap:8px}.item-actions button{flex:1;padding:9px;border-radius:8px;border:1px solid #2b2b2b;background:#181818;color:#ddd;cursor:pointer}.item-actions button:hover{background:#fff;color:#000}.empty{border:1px dashed #333;border-radius:18px;padding:70px 20px;text-align:center;color:#777}.empty-icon{font-size:38px;color:#aaa}.empty h3{color:#ddd}.about{border-top:1px solid #1c1c1c;max-width:900px}.about p:last-child{color:#999;line-height:1.8;font-size:16px}footer{text-align:center;color:#666;padding:35px;border-top:1px solid #1c1c1c;font-size:13px}#toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:#fff;color:#000;padding:12px 18px;border-radius:10px;font-weight:700;display:none;z-index:30}@media(max-width:800px){nav{display:none}.header{padding:0 4%}.upload-btn{padding:9px 11px;font-size:12px}.hero{grid-template-columns:1fr;padding:65px 6%;min-height:auto}.hero-card{height:300px}.section{padding:60px 6%}.section-head{align-items:start;gap:20px;flex-direction:column}.grid{grid-template-columns:1fr}.item img,.item video{height:230px}}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="brand"><span class="dot"></span> ভেরিফাই</div>
+  <nav>
+    <a href="#home">হোম</a>
+    <a href="#gallery">গ্যালারি</a>
+    <a href="#about">আমার সম্পর্কে</a>
+  </nav>
+  <button class="upload-btn" onclick="document.getElementById('fileInput').click()">+ ছবি/ভিডিও যোগ করুন</button>
+  <input id="fileInput" type="file" accept="image/*,video/*" multiple hidden>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <p class="eyebrow">PERSONAL PORTFOLIO & GALLERY</p>
+    <h1>মেহেদী হাসানের<br><span>ভেরিফাই</span> গ্যালারি</h1>
+    <p class="subtitle">আমার পছন্দের ছবি, ভিডিও এবং কাজগুলো এক জায়গায়। প্রতিটি আইটেম সহজেই শেয়ার করুন।</p>
+    <div class="hero-actions">
+      <a class="primary" href="#gallery">গ্যালারি দেখুন</a>
+      <button class="secondary" onclick="document.getElementById('fileInput').click()">ফাইল যোগ করুন</button>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="shine"></div>
+    <div class="card-logo">ভেরিফাই</div>
+    <div class="card-name">মেহেদী হাসান</div>
+    <div class="card-small">MY DIGITAL GALLERY</div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">MY COLLECTION</p>
+      <h2>আমার গ্যালারি</h2>
+    </div>
+    <div class="filters">
+      <button class="filter active" data-filter="all">সব</button>
+      <button class="filter" data-filter="image">ছবি</button>
+      <button class="filter" data-filter="video">ভিডিও</button>
+    </div>
+  </div>
+  <div id="empty" class="empty">
+    <div class="empty-icon">＋</div>
+    <h3>আপনার গ্যালারি এখনো খালি</h3>
+    <p>উপরের “ছবি/ভিডিও যোগ করুন” বাটনে চাপ দিয়ে ফাইল নির্বাচন করুন।</p>
+  </div>
+  <div id="galleryGrid" class="grid"></div>
+</section>
+
+<section id="about" class="about section">
+  <p class="eyebrow">ABOUT</p>
+  <h2>মেহেদী হাসান</h2>
+  <p>এটি আমার ব্যক্তিগত ডিজিটাল গ্যালারি—ছবি, ভিডিও ও প্রয়োজনীয় কাজ সুন্দরভাবে সংরক্ষণ ও শেয়ার করার জন্য।</p>
+</section>
+</main>
+
+<footer>© 2026 ভেরিফাই — মেহেদী হাসান</footer>
+<div id="toast"></div>
+<script>
+const input=document.getElementById('fileInput'), grid=document.getElementById('galleryGrid'), empty=document.getElementById('empty'), toast=document.getElementById('toast');let items=[];let currentFilter='all';
+input.addEventListener('change',e=>{[...e.target.files].forEach(file=>{const url=URL.createObjectURL(file);items.unshift({name:file.name,url,type:file.type.startsWith('video/')?'video':'image'});});render();input.value='';});
+document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');currentFilter=b.dataset.filter;render()});
+function render(){grid.innerHTML='';let shown=items.filter(x=>currentFilter==='all'||x.type===currentFilter);empty.style.display=shown.length?'none':'block';shown.forEach((x,i)=>{const card=document.createElement('article');card.className='item';const media=x.type==='video'?document.createElement('video'):document.createElement('img');media.src=x.url;if(x.type==='video')media.controls=true;else media.loading='lazy';const info=document.createElement('div');info.className='item-info';info.innerHTML=`<div class="item-title">${escapeHtml(x.name)}</div><div class="item-actions"><button onclick="shareItem('${encodeURIComponent(x.url)}','${encodeURIComponent(x.name)}')">↗ শেয়ার</button><button onclick="removeItem(${items.indexOf(x)})">মুছুন</button></div>`;card.append(media,info);grid.appendChild(card)})}
+function shareItem(url,name){const u=decodeURIComponent(url),n=decodeURIComponent(name);if(navigator.share)navigator.share({title:n,text:'ভেরিফাই গ্যালারি — মেহেদী হাসান',url:u}).catch(()=>{});else{navigator.clipboard?.writeText(location.href).then(()=>showToast('ওয়েবসাইটের লিংক কপি হয়েছে'))}}
+function removeItem(i){items.splice(i,1);render();showToast('ফাইল সরানো হয়েছে')}
+function showToast(t){toast.textContent=t;toast.style.display='block';setTimeout(()=>toast.style.display='none',2200)}
+function escapeHtml(s){return s.replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+render();
+</script>
+</body>
+</html>
